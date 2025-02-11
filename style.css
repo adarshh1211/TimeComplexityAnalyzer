@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f2f7; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    background-color: #f0f8ff; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #0d47a1; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-area, .result-area {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1565c0; 
+    font-weight: 500;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #90caf9; 
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 14px;
+    resize: vertical;
+}
+
+button {
+    background-color: #1e88e5; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1565c0; 
+}
+
+.result-area {
+    border: 1px solid #90caf9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.result-area h2 {
+    color: #1565c0;
+    margin-top: 0;
+}
+
+#complexity, #explanation, #executionTime, #error {
+    margin-bottom: 8px;
+    color: #37474f;
+}
+
+#error {
+    color: #d32f2f; 
+    font-weight: bold;
+}
+
+.complexity-visualizations {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.complexity-visualizations img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    textarea {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Complexity Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Time Complexity Analyzer</h1>
+        <div class="input-area">
+            <label for="code">Enter Python Code:</label>
+            <textarea id="code" rows="10" cols="50"></textarea>
+            <button id="analyze">Analyze</button>
+        </div>
+        <div class="result-area">
+            <h2>Result:</h2>
+            <p id="complexity">Complexity: </p>
+            <p id="explanation">Explanation: </p>
+            <p id="executionTime">Execution Time: </p>
+            <p id="error">Error: </p>
+        </div>
+        <div class="complexity-visualizations">
+          <h2>Complexity Visualizations</h2>
+          <img src="complexity_graph.png" alt="Complexity Graph">
+          <p> This graph is for illustrative purposes only.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
